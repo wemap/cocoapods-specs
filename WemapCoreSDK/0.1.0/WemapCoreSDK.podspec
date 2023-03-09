@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
 
   # spec.source                 = { :s3 => "https://getwemap.mobile.com.s3.amazonaws.com/production/sdk/core/ios/#{spec.version}/WemapCore.zip" }
   spec.source                 = { :s3 => "https://mobile-dev.bear2b.com.s3.amazonaws.com/wemap/sdk/core/ios/#{spec.version}/WemapCoreSDK.zip" }
-  spec.vendored_frameworks    = 'Artifacts/WemapCoreSDK.xcframework'
+  spec.vendored_frameworks    = 'WemapCoreSDK/WemapCoreSDK.xcframework'
 
   spec.dependency             'Alamofire', '~>5.6.0'
   
