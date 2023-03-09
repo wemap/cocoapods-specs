@@ -11,8 +11,8 @@ Pod::Spec.new do |spec|
   spec.swift_versions         = '5.7'
 
   # spec.source                 = { :s3 => "https://getwemap.mobile.com.s3.amazonaws.com/production/sdk/map/ios/#{spec.version}/WemapMap.xcframework.zip" }
-  spec.source                 = { :s3 => "https://mobile-dev.bear2b.com.s3.amazonaws.com/wemap/sdk/map/ios/#{spec.version}/WemapMapSDK.zip" }
-  spec.vendored_frameworks    = 'Artifacts/WemapMapSDK.xcframework'
+  spec.source                 = { :s3 => "https://mobile-dev.bear2b.com.s3.amazonaws.com/wemap/sdk/map/ios/#{spec.version}/#{spec.name}.zip" }
+  spec.vendored_frameworks    = "#{spec.name}/#{spec.name}.xcframework"
 
   spec.dependency             'WemapCoreSDK', '0.1.0'
   spec.dependency             'MapLibre', '~>5.12.0'
