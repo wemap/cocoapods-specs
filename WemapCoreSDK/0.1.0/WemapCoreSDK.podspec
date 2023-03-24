@@ -10,13 +10,13 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target  = '11.0'
   spec.swift_versions         = '5.7'
 
-  # spec.source                 = { :s3 => "https://getwemap.mobile.com.s3.amazonaws.com/production/sdk/core/ios/#{spec.version}/WemapCore.zip" }
-  spec.source                 = { :s3 => "https://mobile-dev.bear2b.com.s3.amazonaws.com/wemap/sdk/core/ios/#{spec.version}/WemapCoreSDK.zip" }
-  spec.vendored_frameworks    = 'WemapCoreSDK/WemapCoreSDK.xcframework'
+  spec.source                 = { :s3 => "https://mobile-dev.getwemap.com.s3.amazonaws.com/wemap/sdk/core/ios/#{spec.version}/#{spec.name}.zip" }
+  spec.vendored_frameworks    = "#{spec.name}/#{spec.name}.xcframework"
 
-  spec.dependency             'Alamofire', '~>5.6.0'
-  
+  spec.frameworks             = 'CoreLocation'
+
   rx_version                  = '~>6.5.0'
   spec.dependency             'RxSwift', rx_version
   spec.dependency             'RxCocoa', rx_version
+  spec.dependency             'Alamofire', '~>5.6.0'
 end
