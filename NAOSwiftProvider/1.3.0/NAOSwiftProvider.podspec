@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'support' => 'Support@polestar.eu' }
   # s.source           = { :git => 'https://bitbucket.org/polestarusa/naoswiftprovider.git', :tag => s.version.to_s }
-  s.source           = { :git => 'git@github.com:wemap/NAOSwiftProvider.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/wemap/NAOSwiftProvider.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '10.0'
   
