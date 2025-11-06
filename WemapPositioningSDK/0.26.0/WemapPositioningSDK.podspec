@@ -29,7 +29,7 @@ Pod::Spec.new do |spec|
 
   spec.subspec 'Polestar' do |subspec|
 
-    spec.dependency                 'NAOSDKFramework', '~>4.12.0'
+    subspec.dependency              'NAOSDKFramework', '~>4.12.0'
     subspec.vendored_frameworks   = 'WemapPositioningSDK/WemapPositioningSDKPolestar.xcframework'
   end
 
